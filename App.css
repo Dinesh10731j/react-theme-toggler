@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.toggle {
+  height: 50px;
+  width: 120px;
+  padding: 15px;
+  filter: drop-shadow(3px 3px 5px grey);
+  border-radius: 75px;
+  position: relative;
+}
+
+.toggle input {
+  display: none;
+}
+
+.toggle input:checked+.slider {
+  transform: translateX(68px);
+  background: grey;
+}
